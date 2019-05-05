@@ -1,0 +1,41 @@
+* { margin: 0; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: #4ab4ff;
+}
+
+h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 700px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    font-size: 0.8rem;
+}
