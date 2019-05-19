@@ -17,16 +17,16 @@ h1#title {
     position: absolute;
     top:20px;
     left: 50%;
-    font-size: 0.5rem;
+    font-size: 1.0rem;
     text-align: center;
     color: #FFFF00;
 }
 
 h2#title{
     position: absolute;
-    top:30px;
-    left: 52%;
-    font-size: 0.3rem;
+    top:40px;
+    left: 55%;
+    font-size: 0.7rem;
     text-align: center;
     color: #FFFFFF;
 }
