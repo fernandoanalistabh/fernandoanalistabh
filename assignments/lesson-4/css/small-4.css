@@ -17,7 +17,7 @@ h1#title {
     position: absolute;
     top:20px;
     left: 50%;
-    font-size: 1.0rem;
+    font-size: 0.5rem;
     text-align: center;
     color: #FFFF00;
 }
@@ -25,8 +25,8 @@ h1#title {
 h2#title{
     position: absolute;
     top:60px;
-    left: 54%;
-    font-size: 0.7rem;
+    left: 51%;
+    font-size: 0.3rem;
     text-align: center;
     color: #FFFFFF;
 }
