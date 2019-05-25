@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px){
+    #logo{
+        max-width: 100%; 
+        max-height: 10%;
+        position: absolute;
+        left:15px;
+        top:30px;
+    }
+
+    #banner{
+        max-width:100%;
+        position: relative;
+        left:0px;
+        top:15px;
+    }
+
+    h1#title {
+        position: absolute;
+        top:20px;
+        left: 35%;
+        font-size: 1.0rem;
+        text-align: center;
+        color: #FFFF00;
+    }
+
+    h2#title{
+        position: absolute;
+        top:40px;
+        left: 38%;
+        font-size: 0.7rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    ul#bar {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #FFFF00;
+    }
+  
+    li a {
+        float: none;
+        width: 100%;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+  
+    li a:hover {
+        background-color: #FFFFFF;
+    }
+}
