@@ -1,0 +1,20 @@
+table{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+th{
+    background: #e7f0ed;
+    color: black;
+}
+tr{
+    background: #628ca6;
+}
+tr:nth-child(odd) {
+    background: #7fb9c2;
+}
+
+td.diferent{
+    background: #e7f0ed;
+    color: black;
+}
