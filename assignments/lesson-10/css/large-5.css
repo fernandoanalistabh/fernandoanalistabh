@@ -1,0 +1,116 @@
+@media screen and (min-width: 600px){
+    header, nav{
+        display: flex;
+        flex-direction: column;
+	    max-width: 100%;
+    }
+    main#gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2px;
+    }
+    .menu-btn{
+        display: none;
+    }
+    div#summary{
+        width: 30%;
+        height: 25%;
+    }
+    #logo{
+        max-width: 100%; 
+        max-height: 100%;
+        position: absolute;
+        left:15px;
+        top:30px;
+    }
+    
+    #banner{
+        width:100%;
+        height: 130px;
+        position: relative;
+        left:0px;
+        top:15px;
+    }
+    
+    h1#title {
+        position: absolute;
+        top: 15px;
+        left: 40%;
+        font-size: 2.0rem;
+        text-align: center;
+        color: #FFFF00;
+    }
+
+    h2#title{
+        position: absolute;
+        top: 40px;
+        left: 40%;
+        font-size: 2.0rem;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    ul#bar {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #FFFF00;
+    }
+  
+    li.active {
+        float: left;
+    }
+  
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+  
+    li a:hover {
+        background-color: #FFFFFF;
+    }
+    footer{
+        text-align: center;
+        background-color: #FFFF00;
+    }
+
+    div#thanks{
+        height: 200px;
+        width: 100%;
+        background: rgb(157, 196, 238);
+        color:black;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    fieldset{
+        line-height: 30px;
+    }
+
+    label{
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .rowalign{
+        position:absolute;
+        left:150px;
+        margin-top:2px;
+        width:225px;
+    }
+
+    .submitbutton{
+        text-align: center;
+        width:225px;
+    }
+}

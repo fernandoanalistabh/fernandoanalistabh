@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Assignment portal page for Fernando Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+    <link rel="stylesheet" href="css/medium-7.css">
+    <title>Preston Town</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="images/banner-small.jpeg" media="max-width: 600px">
+            <source srcset="images/banner-large.jpeg" media="max-width: 600px">
+            <img id="banner" src="images/banner-large.jpeg" alt="banner">
+        </picture>
+        <picture>
+            <source srcset="images/logo-small.jpg" media="max-width: 600px">
+            <source srcset="images/logo-large.jpg" media="min-width: 600px">
+            <img id="logo" src="images/logo-large.jpg" alt="Logo">
+        </picture>
+        <h1 id="title">Brazil Weather News</h1>
+        <h2 id="title">Motto of catch phrase</h2>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul id="bar">
+                <li class="active"><a href="preston-7.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li class="active"><a href="#">Soda Springs</a></li>
+                <li class="active"><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="thanks">Thanks for providing information.</div>
+    </main>
+    <footer>
+        &copy;2020 The Weather Site | Atributions | Fernando José dos Santos 
+        <br>
+        <div id="currentDate">&nbsp;</div>
+    </footer>
+    <script type="text/javascript" src="script/currentdate.js"></script>
+    <script type="text/javascript" src="script/windchill.js"></script>
+</body>
+</html>     
