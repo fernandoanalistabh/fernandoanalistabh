@@ -4,8 +4,17 @@ var daysb = new Array('Sun','Mon','Tue','Wed','Thi','Fri','Sat');
 var month = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 document.getElementById("currentDate").innerHTML = days[date.getDay()] + ", " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear();
 
+function cityId(){
+    if (document.title=="Preston Town")
+        return "5604473";
+    if (document.title=="Soda Springs")
+        return "5607916";
+    if(document.title=="Fish Haven")
+        return "5585010";
+}
+
 let weatherRequest = new XMLHttpRequest();
-let urlCurrentApi = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=6c9bd331a857f7a81eb1d8c376e8d309";
+let urlCurrentApi = "http://api.openweathermap.org/data/2.5/weather?id=" + cityId() + "&units=imperial&APPID=6c9bd331a857f7a81eb1d8c376e8d309";
 weatherRequest.open('Get', urlCurrentApi, true);
 weatherRequest.send();
 
@@ -22,7 +31,7 @@ weatherRequest.onload = function(){
 }
 
 let forecastRequest = new XMLHttpRequest();
-let urlForecastApi = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=6c9bd331a857f7a81eb1d8c376e8d309";
+let urlForecastApi = "http://api.openweathermap.org/data/2.5/forecast?id=" + cityId() + "&units=imperial&APPID=6c9bd331a857f7a81eb1d8c376e8d309";
 forecastRequest.open('Get', urlForecastApi, true);
 forecastRequest.send();
 
@@ -35,11 +44,19 @@ forecastRequest.onload = function(){
     }
     
     var temps = new Array(5);
+    var icons = new Array(5);
+    var descs = new Array(5);
+    let index = 0;
     for(let i=0;i<40;i++){
-        if(weatherData.list[i].dt_txt.includes("18:00:00"))
-            temps.push(weatherData.list[i].main.temp_max);
+        if(weatherData.list[i].dt_txt.includes("18:00:00")){
+            temps[index] = weatherData.list[i].main.temp;
+            icons[index] = weatherData.list[i].weather[0].icon;
+            descs[index] = weatherData.list[i].weather[0].description;
+            index++;
+        }
     }
     for(let i=0;i<5;i++){
-        document.getElementById("forecast").rows[1].cells[i].innerHTML = temps[i];
+        document.getElementById("forecast").rows[2].cells[i].innerHTML = temps[i] + " ºF";
+        document.getElementById("forecast").rows[1].cells[i].innerHTML = "<img src='http://openweathermap.org/img/wn/" + icons[i] + "@2x.png' alt='" + descs[1] + "' id='weather'/>";
     }
 }

@@ -15,6 +15,8 @@
     div#summary{
         width: 30%;
         height: 25%;
+        border: 1px solid yellow;
+        background: lightyellow;
     }
     #logo{
         max-width: 100%; 
@@ -112,5 +114,60 @@
     .submitbutton{
         text-align: center;
         width:225px;
+    }
+
+    section#infomation{
+        width: 80%;
+        left:10%;
+        background: lightyellow;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    h2,h3{
+        text-align: center;
+    }
+
+    #city{
+        height:200px;
+        width: 400px;
+    }
+
+    section#temperature{
+        left:10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+    body{
+        background: lightblue;
+    }
+
+    section#contact{
+        display: flex;
+        flex-direction: row;
+    }
+
+    article{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    div#contact{
+        width:50%;
+        padding-left: 10%
+    }
+
+    table{
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    img#weather{
+        width: 40px;
     }
 }
